@@ -15,12 +15,12 @@ function App() {
 
   return (
     <div>
-      {/* <Header/> */}
+      <Header/>
       {/* <Hero/> */}
       {/* <About/> */}
       {/* <Skills/> */}
       {/* <ProjectsCardList/> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>   
   )
 }
