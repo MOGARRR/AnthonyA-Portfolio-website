@@ -15,9 +15,9 @@ function App() {
 
   return (
     <div>
+      <Hero/>
       <Header/>
-      {/* <Hero/> */}
-      {/* <About/> */}
+      
       {/* <Skills/> */}
       {/* <ProjectsCardList/> */}
       {/* <Footer/> */}
