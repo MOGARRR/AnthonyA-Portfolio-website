@@ -5,7 +5,7 @@ import projects from "../data/project";
 const ProjectsCardList = () => {
 
   return (
-    <div className="bg-orange-300">
+    <div className="bg-orange-300 ">
       {projects.map((project) => (
         <ProjectCard
         key={project.id}
