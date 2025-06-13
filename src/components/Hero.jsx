@@ -1,19 +1,20 @@
 import React from "react";
-import About from "./About";
 
 const Hero = () => {
   return (
-    <div className="flex bg-green-300">
-      <div className="bg-gradient-to-tl from-violet-900 from-20% to-blue-800 to-100% flex flex-col justify-center grow-0 shrink-0 rounded-full w-96 h-96 font-sans text-stone-50" >
-      <h1 className="text-5xl">Hi! Anthony Alicea</h1>
-      <h2 className="text-3xl">Full-Stack Developer</h2>
-      <p className="text-xl">
-        A full-stack developer who loves learning and creating!
-      </p>
+    <div className="mt-40 flex justify-items-start">
+      <div className="text-stone-50">
+        <h1 className="text-5xl">
+          Hi my name is
+        </h1>
+        <h1 className="text-7xl mb-5"> Anthony Alicea</h1>
+        <h2 className="text-3xl">
+          Its nice to meet you! <br /><br />
+          I'm a full-stack developer who loves learning software development and
+          creating new projects!
+        </h2>
+      </div>
     </div>
-    <About/>
-    </div>
-    
   );
 };
 
