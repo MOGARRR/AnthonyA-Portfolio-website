@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div>
-      <Hero/>
+      {/* <Hero/> */}
       <Header/>
-      <MainContent/>
+      {/* <MainContent/> */}
       {/* <Footer/> */}
     </div>   
   )
