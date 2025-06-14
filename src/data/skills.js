@@ -3,7 +3,7 @@ const skills = [
     id: 0,
     name: "Languages",
     list: [
-      { id: 0, name: "JavaScript" },
+      { id: 0, name: "JavaScript", logo:'/assets/js-brands.svg'},
       { id: 1, name: "Ruby" },
       { id: 2, name: "SQL" },
       { id: 3, name: "HTML" },
