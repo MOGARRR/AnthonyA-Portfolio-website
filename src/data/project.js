@@ -12,7 +12,7 @@ const projects = [
       { id: 4, name: "RSpec" },
     ],
     github: "https://github.com/MOGARRR/jungle-rails",
-    image: "/assets/jungle-preview.png", // replace with your image
+    image: "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28192739/Homepage-Design-Featured-Image-1024x597.gif", // replace with your image
   },
   {
     id: 1,
@@ -27,7 +27,7 @@ const projects = [
       { id: 4, name: "Mailgun" },
     ],
     github: "https://github.com/Amga20d/decision-maker",
-    image: "/assets/decision-maker.png",
+    image: "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28192739/Homepage-Design-Featured-Image-1024x597.gif",
   },
   {
     id: 2,
@@ -40,9 +40,9 @@ const projects = [
       { id: 2, name: "PostgreSQL" },
       { id: 3, name: "HTML" },
       { id: 4, name: "CSS" },
-      "Node.js", "Express", "PostgreSQL", "HTML", "CSS"],
+    ],
     github: "https://github.com/MOGARRR/LightBnB",
-    image: "/assets/lightbnb.png",
+    image: "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28192739/Homepage-Design-Featured-Image-1024x597.gif",
   },
 ];
 

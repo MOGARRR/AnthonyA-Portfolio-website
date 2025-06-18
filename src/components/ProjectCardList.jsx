@@ -5,8 +5,10 @@ import projects from "../data/project";
 const ProjectsCardList = () => {
 
   return (
-    <div className="bg-orange-300 ">
-      {projects.map((project) => (
+    <div className=" w-full h-full mt-20">
+      <h2 className="text-4xl">Projects</h2>
+      <div className="flex flex-col items-center">
+        {projects.map((project) => (
         <ProjectCard
         key={project.id}
         title={project.title}
@@ -16,6 +18,7 @@ const ProjectsCardList = () => {
         image={project.image}
         />
       ))}
+      </div>
    
     </div>
   );
