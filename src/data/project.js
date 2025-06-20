@@ -1,3 +1,6 @@
+import photoLabsHome from '../photos/photo-labs-home.png'
+import jungleHome from '../photos/Jungle-rails-home.png'
+import decisionHome from '../photos/decision-maker-home.png'
 const projects = [
   {
     id: 0,
@@ -12,7 +15,7 @@ const projects = [
       { id: 4, name: "RSpec" },
     ],
     github: "https://github.com/MOGARRR/jungle-rails",
-    image: "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28192739/Homepage-Design-Featured-Image-1024x597.gif", // replace with your image
+    image: jungleHome, // replace with your image
   },
   {
     id: 1,
@@ -27,10 +30,25 @@ const projects = [
       { id: 4, name: "Mailgun" },
     ],
     github: "https://github.com/Amga20d/decision-maker",
-    image: "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28192739/Homepage-Design-Featured-Image-1024x597.gif",
+    image: decisionHome,
   },
   {
     id: 2,
+    title: "PhotoLabs",
+    description:
+      " Front-end React application built to deliver an engaging user experience through interactive design. Users can browse a gallery of curated images, toggle favorites, and navigate cleanly through a responsive, visually balanced layout. The app emphasizes component-based design and scalable architecture.",
+    stack: [
+      { id: 0, name: "React" },
+      { id: 1, name: "Node.js" },
+      { id: 2, name: "HTML" },
+      { id: 3, name: "CSS" },
+      { id: 4, name: "SCSS" },
+    ],
+    github: "github.com/MOGARRR/PhotoLabs",
+    image: photoLabsHome,
+  },
+  {
+    id: 3,
     title: "LightBnB",
     description:
       "Multi-page Airbnb clone with custom PostgreSQL database. Supports search filtering, user listings, reservations, and more.",

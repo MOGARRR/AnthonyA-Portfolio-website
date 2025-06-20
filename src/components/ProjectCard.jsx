@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
           {stack.map((item) => (
             <span className= " bg-gray-200 rounded-full m-2 p-2 text-xl" key={item.id}>{item.name}</span>
           ))}
-          <p className="text-2xl mt-6">{description}</p>
+          <p className="text-2xl mt-6 p-2">{description}</p>
         </div>
       </div>
     </div>
