@@ -11,10 +11,10 @@ const Skills = () => {
             key={skill.id}
             className="bg-gray-400 border-2  border-stone-950 size-52 flex flex-col justify-around"
           >
-            <div className="bg-gray-200 rounded-full size-28 self-center">
-              Icon
+            <div className=" size-28 self-center p-2 ">
+              <img className="size-full" src={skill.logo} alt="" />
             </div>
-            <h2 className="text-2xl">{skill.name}</h2>
+            <h2 className="text-3xl">{skill.name}</h2>
           </div>
         ))}
       </div>
