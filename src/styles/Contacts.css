@@ -1,19 +1,11 @@
-:hover.glow-git{
+:hover.glow{
   background: rgb(238, 37, 30);
   box-shadow: 1px 1px 15px 10px rgb(238, 37, 30);
-
-}
-:hover.glow-linke{
-  background-color:  rgb(56 189 248);
-  box-shadow: 1px 1px 15px 13px rgb(56 189 248);
-}
-:hover.glow-email{
-  background: rgb(250, 237, 51);
-  box-shadow: 1px 1px 15px 13px rgb(250, 237, 51);
-}
-:hover.glow-phone{
-  background: rgb(57, 211, 90);
-  box-shadow: 1px 1px 15px 13px rgb(57, 211, 90);
+  text-shadow:
+  1px 1px 7px red,
+  0 0 1em blue,
+  0 0 2em blue;
+  transform: translateY(-3px);
 }
 
 
