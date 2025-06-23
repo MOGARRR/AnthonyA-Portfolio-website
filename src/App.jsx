@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from "./components/About";
 import ProjectsCardList from './components/ProjectCardList';
 import Skills from './components/Skills';
+import Contacts from './components/Contacts';
 import './App.css'
 
 
@@ -15,6 +16,7 @@ function App() {
     <div>
       <Header/>
       <Hero/>
+      <Contacts/>
       <About/>
       <Skills/>
       <ProjectsCardList/>
