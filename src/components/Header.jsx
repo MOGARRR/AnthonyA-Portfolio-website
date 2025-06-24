@@ -8,10 +8,10 @@ const Header = () => {
 
         <h1 className="ml-5">Anthony Alicea</h1>
         <div className="flex justify-evenly w-3/5">
-        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer hover:self-start ">About</span>
-        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer hover: ">Projects</span>
-        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer hover: ">Contacts</span>
-        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer hover: ">Resume</span>
+        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer ">About</span>
+        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer ">Projects</span>
+        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer ">Contacts</span>
+        <span className="nav-item border-b-2 border-transparent  hover:cursor-pointer ">Resume</span>
         </div>
         
       </div> 
