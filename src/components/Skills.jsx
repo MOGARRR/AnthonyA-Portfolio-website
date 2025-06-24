@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import skills from "../data/skills";
+import '../styles/Skills.css'
 
 const Skills = () => {
+const [hover,setHover] = useState([]);
+const handleHover = (clear, id) => clear ? setHover([]) : setHover(prevArray => [...prevArray, id]);
+
   return (
     <div className="mt-16">
       <h1 className="text-4xl mb-4">Skills</h1>
@@ -9,12 +13,15 @@ const Skills = () => {
         {skills.map((skill) => (
           <div
             key={skill.id}
+            onMouseEnter={() => handleHover(false,skill.id)}
+            onMouseLeave={() => handleHover(true)}
             className="bg-gray-400 border-2  border-stone-950 h-52 flex flex-col justify-around"
           >
             <div className=" size-32 self-center p-2 ">
               <img className="size-full" src={skill.logo} alt="" />
             </div>
-            <h2 className="text-3xl">{skill.name}</h2>
+            {hover.includes(skill.id) &&  <h2 className="text-3xl skill-title">{skill.name}</h2>}
+            
           </div>
         ))}
       </div>
