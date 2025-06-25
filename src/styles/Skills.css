@@ -1,3 +1,12 @@
+.skill-title{
+animation: rendering 1s;
+}
+
+@keyframes rendering {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 .glow-mouse {
   position: relative;
   overflow: hidden;
