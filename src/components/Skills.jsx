@@ -15,7 +15,7 @@ const handleHover = (clear, id) => clear ? setHover([]) : setHover(prevArray => 
             key={skill.id}
             onMouseEnter={() => handleHover(false,skill.id)}
             onMouseLeave={() => handleHover(true)}
-            className="bg-gray-400 border-2  border-stone-950 h-52 flex flex-col justify-around"
+            className="border-2  border-stone-950 h-52 flex flex-col justify-around"
           >
             <div className=" size-32 self-center p-2 ">
               <img className="size-full" src={skill.logo} alt="" />

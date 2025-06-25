@@ -8,4 +8,6 @@
   transform: translateY(-3px);
 }
 
-
+.side-bar{
+  backdrop-filter: blur(10px);
+}
