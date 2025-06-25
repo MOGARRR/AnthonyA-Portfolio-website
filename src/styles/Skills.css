@@ -1,0 +1,23 @@
+.glow-mouse {
+  position: relative;
+  overflow: hidden;
+}
+.glow-mouse span {
+  position: relative;
+  pointer-events: none;
+}
+.glow-mouse::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, rgb(65, 188, 197), transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.glow-mouse:hover::before {
+  --size: 160px;
+}
