@@ -1,0 +1,24 @@
+:hover.form-div{
+  text-shadow:
+  1px 1px 7px red,
+  0 0 1em blue,
+  0 0 0.2em blue;
+}
+
+:hover.form-area{
+   box-shadow: 1px 1px 5px red,
+  0 0 1em blue,
+  0 0 0.2em blue;  
+}
+
+:hover.form-btn{
+  text-shadow:
+  1px 1px 7px red,
+  0 0 1em blue,
+  0 0 0.2em blue;
+  
+  box-shadow: 
+  1px 1px 5px red,
+  0 0 1em blue,
+  0 0 0.2em blue;  
+}
