@@ -7,6 +7,7 @@ import ProjectsCardList from './components/ProjectCardList';
 import Skills from './components/Skills';
 import Contacts from './components/Contacts';
 import ContactForm from './components/ContactForm';
+import HeaderBar from './components/HeaderBar';
 import './App.css'
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <div>
       <Header/>
+      <HeaderBar/>
       <Hero/>
       <Contacts/>
       <About/>
