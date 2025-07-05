@@ -13,7 +13,7 @@ const Contacts = () => {
     <div>
       <div
         dir="rtl"
-        className="side-bar flex flex-col justify-around  w-33 p-2 fixed left-0 top-1/3 rounded-s-lg border-2 border-stone-50 h-2/6"
+        className="side-bar flex flex-col justify-around  w-33 p-2 fixed left-0 top-1/3 rounded-s-lg border-2 border-stone-500 h-2/6"
       >
         <div className="glow m-2 p-1 rounded-full text-stone-400 hover:text-stone-50  hover:cursor-pointer">
           <a href="https://github.com/MOGARRR" target="blank">
