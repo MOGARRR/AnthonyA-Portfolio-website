@@ -3,7 +3,7 @@ import "../styles/ContactForm.css";
 
 const ContactForm = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 text-stone-50">
       <h1 className="text-4xl mb-5 border-b-2">Get in touch with me! </h1>
       <form className="text-2xl" action="">
         <div className="form-div">
@@ -40,7 +40,7 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <br />
-        <button className="form-btn border-2 p-3 rounded-full w-3/12 border-stone-950 mt-3">
+        <button className="form-btn border-2 border-stone-50 p-3 rounded-full w-3/12 border-stone-950 mt-3">
           Submit
         </button>
       </form>

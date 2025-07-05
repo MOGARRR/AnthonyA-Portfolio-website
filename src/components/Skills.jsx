@@ -14,16 +14,16 @@ const handleCardHover = (e) => {
 }
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 text-stone-50">
       <h1 className="text-4xl mb-4">Skills</h1>
-      <div className="border border-stone-950 grid grid-cols-5 grid-rows-3 gap-0">
+      <div className="border border-stone-50 grid grid-cols-5 grid-rows-3 gap-0">
         {skills.map((skill) => (
           <div
             key={skill.id}
             onMouseEnter={() => handleTitleHover(false,skill.id)}
             onMouseLeave={() => handleTitleHover(true)}
             onMouseMove={(e) => handleCardHover(e)}
-            className="border-2  border-stone-950 h-52 flex flex-col justify-around glow-mouse"
+            className="border-2  border-stone-50 h-52 flex flex-col justify-around glow-mouse"
           >
             <div className=" size-32 self-center p-2 ">
               <span><img className="size-full" src={skill.logo} alt="" /></span>

@@ -1,3 +1,7 @@
+.form-area{
+  background-color: rgb(56, 56, 56);
+}
+
 :hover.form-div{
   text-shadow:
   1px 1px 7px red,
