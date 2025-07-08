@@ -21,18 +21,22 @@ const skills = [
   { id: 2, name: "SQL", logo: sqlLogo},
   { id: 3, name: "HTML", logo:htmlLogo },
   { id: 4, name: "CSS", logo: cssLogo },
-  { id: 5, name: "React", logo: reactLogo },
-  { id: 6, name: "Node.js", logo: nodeLogo },
-  { id: 7, name: "Express.js", logo: expressLogo },
-  { id: 8, name: "Bootstrap", logo: bootstrapLogo },
-  { id: 9, name: "Ejs", logo: ejsLogo},
+  { id: 5, name: "Node.js", logo: nodeLogo },
+  { id: 6, name: "Express.js", logo: expressLogo },
+  { id: 7, name: "React", logo: reactLogo },
+  { id: 8, name: "PostgreSQL", logo: postgresLogo },
+  { id: 9, name: "jQuery", logo: jqueryLogo},
   { id: 10, name: "Sass", logo:sassLogo },
-  { id: 11, name: "jQuery", logo: jqueryLogo},
-  { id: 12, name: "PostgreSQL", logo: postgresLogo },
+  { id: 11, name: "Bootstrap", logo: bootstrapLogo },
+  { id: 12, name: "Ejs", logo: ejsLogo},
   { id: 13, name: "Git", logo: gitLogo},
   { id: 14, name: "GitHub", logo: githubLogo},
+  
 
 
 ];
 
 export default skills;
+
+
+
