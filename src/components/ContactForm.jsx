@@ -3,14 +3,14 @@ import "../styles/ContactForm.css";
 
 const ContactForm = () => {
   return (
-    <div className="mt-20 text-stone-50">
+    <div className="mt-20 text-stone-50 w-9/12">
       <h1 className="text-4xl mb-5 border-b-2 border-stone-500">Get in touch with me! </h1>
       <form className="text-2xl" action="">
         <div className="form-div">
           <label for="name">Full name:</label>
           <br />
           <input
-            className="form-area mt-1 rounded-md p-2 "
+            className="form-area mt-1 rounded-md p-2 w-3/12 "
             type="text"
             id="name"
             name="name"
@@ -21,7 +21,7 @@ const ContactForm = () => {
           <label for="email">Email:</label>
           <br />
           <input
-            className="form-area mt-1 rounded-md p-2"
+            className="form-area mt-1 rounded-md p-2 w-3/12"
             type="email"
             id="email"
             name="email"

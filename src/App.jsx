@@ -11,59 +11,17 @@ import HeaderBar from "./components/HeaderBar";
 import DotGrid from "./components/DotGrid";
 import "./App.css";
 
-// function App() {
-//   return (
-//     // <div>
-//     //   <Header/>
-//     //   <HeaderBar/>
-//     //   <Hero/>
-//     //   <Contacts/>
-//     //   <About/>
-//     //   <Skills/>
-//     //   <ProjectsCardList/>
-//     //   <ContactForm/>
-//     //   <Footer/>
-//     // </div>
-
-//     <div className="relative min-h-screen overflow-hidden bg-gray-200 w-screen">
-//       <DotGrid
-//         className="absolute inset-0 -z-10"
-//         spacing={30}
-//         dotSize={5}
-//         interactive
-//       />
-//       <div className="relative z-10 p-10">
-//         <Header />
-//         <HeaderBar />
-//         <Hero />
-//         <Contacts />
-//         <About />
-//         <Skills />
-//         <ProjectsCardList />
-//         <ContactForm />
-//         <Footer />
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Background */}
       <DotGrid
         className="absolute inset-0 -z-10"
         spacing={32}
         dotSize={4}
         color="#444"
       />
-
-      {/* Foreground Content */}
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
-          <Header />
+         <Header />
          <HeaderBar />
          <Hero />
          <Contacts />
