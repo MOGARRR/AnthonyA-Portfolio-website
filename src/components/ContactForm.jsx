@@ -2,8 +2,9 @@ import React from "react";
 import "../styles/ContactForm.css";
 
 const ContactForm = () => {
+
   return (
-    <div className="mt-20 text-stone-50 w-9/12">
+    <div id="contactForm" className="mt-20 text-stone-50 w-9/12">
       <h1 className="text-4xl mb-5 border-b-2 border-stone-500">Get in touch with me! </h1>
       <form className="text-2xl" action="">
         <div className="form-div">

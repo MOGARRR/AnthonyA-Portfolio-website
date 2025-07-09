@@ -3,7 +3,7 @@ import "../styles/About.css";
 
 const About = () => {
   return (
-    <div className=" mt-20 f text-stone-50 mx-40">
+    <div id="about" className=" mt-20 f text-stone-50 mx-40">
       <h3 className="about text-4xl bolden"> About me </h3>
       <p className="text-2xl">
         I'm a <span className="bolden">full-stack web developer</span> who

@@ -14,7 +14,7 @@ const handleCardHover = (e) => {
 }
 
   return (
-    <div className="mt-16 text-stone-50 w-9/12">
+    <div id="skills" className="mt-16 text-stone-50 w-9/12">
       <h1 className="text-4xl mb-4">Skills</h1>
       <div className="border border-stone-500 grid grid-cols-5 grid-rows-3 gap-0">
         {skills.map((skill) => (
