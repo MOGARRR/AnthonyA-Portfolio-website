@@ -22,7 +22,7 @@ function App() {
       />
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
          <Header />
-         <HeaderBar />
+         {/* <HeaderBar /> */}
          <Hero />
          <Contacts />
          <About />
