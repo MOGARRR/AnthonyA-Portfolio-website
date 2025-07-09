@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/ContactForm.css";
 
 const ContactForm = () => {
-
   return (
     <div id="contactForm" className="mt-20 text-stone-50 w-9/12">
-      <h1 className="text-4xl mb-5 border-b-2 border-stone-500">Get in touch with me! </h1>
-      <form className="text-2xl" action="">
+      <h1 className="text-4xl mb-5 border-b-2 border-stone-500">
+        Get in touch with me!{" "}
+      </h1>
+
+      <form
+        className="text-2xl"
+        action="https://submit-form.com/wuftZxvEz"
+        method="POST"
+        target="_blank"
+      >
         <div className="form-div">
+          <input type="hidden" name="_append" value="false" />
           <label for="name">Full name:</label>
           <br />
           <input
@@ -16,6 +24,7 @@ const ContactForm = () => {
             id="name"
             name="name"
             placeholder="Your Name"
+            required
           />
         </div>
         <div className="form-div">
@@ -27,6 +36,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             placeholder="Your Email"
+            required
           />{" "}
           <br />
         </div>
@@ -38,10 +48,14 @@ const ContactForm = () => {
             name="message"
             id="message"
             placeholder="Leave me a message! "
+            required
           ></textarea>
         </div>
         <br />
-        <button className="form-btn border-2 border-stone-500 p-3 rounded-full w-3/12 mt-3">
+        <button
+          type="submit"
+          className="form-btn border-2 border-stone-500 p-3 rounded-full w-3/12 mt-3"
+        >
           Submit
         </button>
       </form>
