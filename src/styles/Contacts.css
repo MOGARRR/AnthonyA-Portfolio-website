@@ -1,9 +1,9 @@
-:hover.glow{
+.glow:hover{
   background: rgb(238, 37, 30);
   box-shadow: 1px 1px 15px 10px rgb(238, 37, 30);
   text-shadow:
   1px 1px 7px red,
-  0 0 1em blue,
+  0 0 1em #0000ff,
   0 0 2em blue;
   transform: translateY(-3px);
 }

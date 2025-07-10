@@ -1,0 +1,38 @@
+
+.project-card-text{
+  will-change: transform;
+  transition: transform 1s;
+}
+
+:hover.project-card-text{
+  text-shadow:
+  1px 1px 7px red,
+  0 0 1em blue,
+  0 0 2em blue;
+    transition: transform 1s;
+    transform: translateY(-15px);
+}
+
+
+:hover.git-icon{
+  background: rgb(238, 37, 30);
+  box-shadow: 1px 1px 15px 10px rgb(238, 37, 30);
+  text-shadow:
+  1px 1px 7px red,
+  0 0 1em blue,
+  0 0 2em blue;
+  transform: translateY(-3px);
+}
+
+.git-icon {
+  animation-name: git-icon;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes git-icon {
+0% { transform: scale(1); }
+50%{ transform: scale(1.2); }
+100%{ transform: scale(1);}
+}

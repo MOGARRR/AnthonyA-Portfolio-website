@@ -1,3 +1,13 @@
+#contactForm{
+   will-change: transform;
+  transition: transform 1s;
+}
+
+:hover#contactForm{
+      transition: transform 1s;
+    transform: translateY(-15px);
+}
+
 .form-area{
   background-color: rgb(56, 56, 56);
 }

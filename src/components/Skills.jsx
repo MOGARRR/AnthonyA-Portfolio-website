@@ -23,9 +23,9 @@ const handleCardHover = (e) => {
             onMouseEnter={() => handleTitleHover(false,skill.id)}
             onMouseLeave={() => handleTitleHover(true)}
             onMouseMove={(e) => handleCardHover(e)}
-            className="border-2  border-stone-500 h-52 flex flex-col justify-around glow-mouse"
+            className="border-2 border-stone-500 h-52 flex flex-col justify-around glow-mouse"
           >
-            <div className=" size-32 self-center p-2 ">
+            <div className="size-32 self-center p-2 ">
               <span><img className="size-full" src={skill.logo} alt="" /></span>
             </div>
             {hover.includes(skill.id) &&  <span className="text-3xl skill-title">{skill.name}</span>} 
