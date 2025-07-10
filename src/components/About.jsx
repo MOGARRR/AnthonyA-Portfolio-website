@@ -5,13 +5,13 @@ const About = () => {
   return (
     <div id="about" className=" mt-20 f text-stone-50 mx-40">
       <h3 className="about text-4xl bolden"> About me </h3>
-      <p className="text-2xl">
+      <p className="text-3xl">
         I'm a <span className="bolden">full-stack web developer</span> who
         recently graduated from <span className="bolden">Lighthouse Labs</span>{" "}
         and looking for an opportunity to be a part of the ever-evolving world
         of software development! Before tech, I was a{" "}
         <span className="bolden">professional cook</span> {" "}
-        which helped build a foundation of skills like working in or leading a
+        which helped build a foundation of skills like working in and leading a
         team, time management, effective communication, and attention to detail
         that have worked as a foundation for my journey into software
         development. Some things I like to do after consulting my{" "}
