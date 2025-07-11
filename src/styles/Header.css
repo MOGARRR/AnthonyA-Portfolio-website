@@ -3,11 +3,14 @@
   z-index: 1000;
 }
 
-:hover.nav-item{
+.nav-item{
+  will-change: transform;
+  transition: transform 1s;
+}
+.nav-item:hover{
 text-shadow:
   1px 1px 7px red,
   0 0 1em blue,
   0 0 0.2em blue;
-
   transform: translateY(-3px);
 }

@@ -4,8 +4,7 @@
 }
 
 :hover#skills{
-      transition: transform 1s;
-    transform: translateY(-15px);
+    transform: translateY(-15px) ;
 }
 .skill-title{
 animation: rendering 1.5s;

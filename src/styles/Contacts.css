@@ -1,3 +1,21 @@
+.side-bar,.side-bar-copy{
+  backdrop-filter: blur(10px);
+}
+.side-bar-copy{
+animation: rendering 1.5s;
+}
+
+@keyframes rendering {
+    from { left: 0; }
+    to   { left: 1; }
+}
+
+
+.glow,.glow-copy{
+  will-change: transform;
+  transition: transform 1s;
+}
+
 .glow:hover{
   background: rgb(238, 37, 30);
   box-shadow: 1px 1px 15px 10px rgb(238, 37, 30);
@@ -8,6 +26,15 @@
   transform: translateY(-3px);
 }
 
-.side-bar{
-  backdrop-filter: blur(10px);
+.glow-copy:hover{
+  background: rgb(7, 84, 136);
+  box-shadow: 1px 1px 15px 10px rgb(7, 84, 136);
+  text-shadow:
+  1px 1px 7px rgb(7, 84, 136),
+  0 0 1em #00aeff,
+  0 0 2em #00eeff;
+  transform: translateY(-3px);
+  
 }
+
+
