@@ -23,7 +23,7 @@ animation: rendering 1.5s;
   1px 1px 7px red,
   0 0 1em #0000ff,
   0 0 2em blue;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 .glow-copy:hover{
@@ -33,7 +33,7 @@ animation: rendering 1.5s;
   1px 1px 7px rgb(7, 84, 136),
   0 0 1em #00aeff,
   0 0 2em #00eeff;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
   
 }
 

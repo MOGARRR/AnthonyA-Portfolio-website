@@ -14,7 +14,7 @@ const handleScroll = (id) => {
 
   return (
     <div className="nav flex justify-between items-center fixed top-0 left-0 w-screen h-24 p-1 text-4xl text-stone-50">
-      <h1 className="ml-5">Anthony Alicea</h1>
+      <h1 className="nav-item ml-5 text-5xl">Anthony Alicea</h1>
       <div className="flex justify-evenly w-3/5">
         <span onClick={()=>handleScroll('about')} className="nav-item border-b-2 border-transparent text-stone-50  hover:cursor-pointer ">
           About

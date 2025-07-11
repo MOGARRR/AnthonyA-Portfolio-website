@@ -12,5 +12,5 @@ text-shadow:
   1px 1px 7px red,
   0 0 1em blue,
   0 0 0.2em blue;
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
