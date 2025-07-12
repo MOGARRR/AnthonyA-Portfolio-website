@@ -22,7 +22,7 @@ const About = () => {
         important value to me so I always love <span className="bolden">improving</span> or <span className="bolden">learning</span> something
         new, currently I'm learning to write in{" "}
         <span className="bolden">typescript</span> and how to play the {""}
-        <span className="bolden">ocarina</span>! I hope this gave you some
+        ocarina! I hope this gave you some
         insight into who I am and if you'd like to learn more or talk about
         anything, you can reach out to me, and I'd love to chat!
       </p>
