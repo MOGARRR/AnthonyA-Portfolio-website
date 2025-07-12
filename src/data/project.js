@@ -6,7 +6,7 @@ const projects = [
     id: 0,
     title: "Jungle Rails",
     description:
-      "A feature-rich e-commerce platform built with Ruby on Rails. Users can browse products, manage their carts, and complete orders. Admins can manage inventory and view sales analytics.",
+      "A feature-rich e-commerce platform built with Ruby on Rails. Users can browse products, manage their carts, and complete orders. Admins can manage inventory, and view sales analytics.",
     stack: [
       { id: 0, name: "Ruby on Rails" },
       { id: 1, name: "PostgreSQL" },
@@ -15,13 +15,13 @@ const projects = [
       { id: 4, name: "RSpec" },
     ],
     github: "https://github.com/MOGARRR/jungle-rails",
-    image: jungleHome, // replace with your image
+    image: jungleHome, 
   },
   {
     id: 1,
     title: "Decision Maker",
     description:
-      "Full-stack polling app for group decision-making. Users can create polls, vote using drag-and-drop rankings, and receive updates via email.",
+      "Full-stack polling app for helping make group decisions. Users can create and share polls, vote using drag-and-drop rankings, and receive updates on poll standings via email .",
     stack: [
       { id: 0, name: "Node.js" },
       { id: 1, name: "Express" },
@@ -36,7 +36,7 @@ const projects = [
     id: 2,
     title: "PhotoLabs",
     description:
-      " Front-end React application built to deliver an engaging user experience through interactive design. Users can browse a gallery of curated images, toggle favorites, and navigate cleanly through a responsive, visually balanced layout. The app emphasizes component-based design and scalable architecture.",
+      " Front-end React application built for users to share experiences through interactive design. Users can browse a gallery of curated images, toggle favorites, filter photos by topics, or use dark mode to curate thier personal gallery. The app emphasizes component-based design and scalable architecture.",
     stack: [
       { id: 0, name: "React" },
       { id: 1, name: "Node.js" },

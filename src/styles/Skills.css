@@ -1,13 +1,13 @@
 #skills{
-   will-change: transform;
+  will-change: transform;
   transition: transform 1s;
 }
 
-:hover#skills{
-    transform: translateY(-15px) ;
+#skills:hover{
+  transform: translateY(-15px) ;
 }
 .skill-title{
-animation: rendering 1.5s;
+  animation: renderingTitle 1.5s;
   text-shadow:
   1px 1px 7px red,
   0 0 1em blue,
@@ -15,7 +15,7 @@ animation: rendering 1.5s;
 }
 
 
-@keyframes rendering {
+@keyframes renderingTitle {
     from { opacity: 0; }
     to   { opacity: 1; }
 }

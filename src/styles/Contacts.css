@@ -2,7 +2,7 @@
   backdrop-filter: blur(10px);
 }
 .side-bar-copy{
-animation: rendering 1.5s;
+animation: rendering 1s;
 }
 
 @keyframes rendering {
