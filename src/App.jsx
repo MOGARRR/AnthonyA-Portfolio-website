@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -8,8 +9,8 @@ import Skills from "./components/Skills";
 import Contacts from "./components/Contacts";
 import ContactForm from "./components/ContactForm";
 import DotGrid from "./components/DotGrid";
-import "./App.css";
-import MobileHeader from "./components/HeaderMobile";
+import MobileHero from "./components/MobileHero";
+import MobileHeader from "./components/MobileHeader";
 
 function App() {
   const [mobile, setMobile] = useState(false);
@@ -45,7 +46,13 @@ function App() {
       )}
 
       {mobile && (
+        <main>
         <MobileHeader/>
+        <MobileHero></MobileHero>
+
+        </main>
+        
+
       )}
     </>
   );
