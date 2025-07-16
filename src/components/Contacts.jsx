@@ -76,7 +76,7 @@ const Contacts = () => {
           </a>
         </div>
         <div className="glow m-2 p-1 rounded-full text-stone-400 hover:text-stone-50  hover:cursor-pointer ">
-          <a href="tel:+4032009883">
+          <a href="tel:+14032009883">
             <i class="fa-solid fa-phone fa-2xl"></i>
           </a>
         </div>
