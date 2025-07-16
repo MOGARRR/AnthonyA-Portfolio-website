@@ -44,7 +44,7 @@ const projects = [
       { id: 3, name: "CSS" },
       { id: 4, name: "SCSS" },
     ],
-    github: "github.com/MOGARRR/PhotoLabs",
+    github: "https://github.com/MOGARRR/PhotoLabs",
     image: photoLabsHome,
   },
   // {
