@@ -2,8 +2,8 @@ import React from "react";
 
 const MobileHero = () => {
   return (
-    <div className="text-stone-50 mt-6 p-3">
-        <h1 className="text-3xl">
+    <div className="text-stone-50  p-3">
+        <h1 className="text-3xl mt-16">
           Hi, my name is
         </h1>
         <h1 className="hero-name gradient text-5xl font-bold mb-5 "> Anthony Alicea</h1>

@@ -11,6 +11,7 @@ import ContactForm from "./components/ContactForm";
 import DotGrid from "./components/DotGrid";
 import MobileHero from "./components/MobileHero";
 import MobileHeader from "./components/MobileHeader";
+import MobileAbout from "./components/MobileAbout";
 
 function App() {
   const [mobile, setMobile] = useState(false);
@@ -48,7 +49,8 @@ function App() {
       {mobile && (
         <main>
         <MobileHeader/>
-        <MobileHero></MobileHero>
+        <MobileHero/>
+        <MobileAbout/>
 
         </main>
         
