@@ -12,6 +12,7 @@ import DotGrid from "./components/DotGrid";
 import MobileHero from "./components/MobileHero";
 import MobileHeader from "./components/MobileHeader";
 import MobileAbout from "./components/MobileAbout";
+import MobileSkills from "./components/MobileSkills";
 
 function App() {
   const [mobile, setMobile] = useState(false);
@@ -51,6 +52,7 @@ function App() {
         <MobileHeader/>
         <MobileHero/>
         <MobileAbout/>
+        <MobileSkills/>
 
         </main>
         
