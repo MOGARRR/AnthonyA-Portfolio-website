@@ -30,7 +30,7 @@ const handleScroll = (id) => {
         </span>
         <span className="nav-item border-b-2 border-transparent text-stone-50 hover:cursor-pointer ">
           <a
-            href="/public/Anthony Alicea Resume 2025.pdf"
+            href="/Anthony Alicea Resume 2025.pdf"
             target="blank"
             rel="noopener noreferrer"
           >
