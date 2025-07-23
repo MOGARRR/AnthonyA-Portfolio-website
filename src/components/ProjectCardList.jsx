@@ -9,7 +9,7 @@ const ProjectsCardList = (props) => {
     <>
       {!mobile && (
         <div className=" h-full mt-20 w-9/12">
-          <h2 id="projects" className="text-4xl">
+          <h2 id="projects" className="text-5xl">
             Projects
           </h2>
           <div className="flex flex-col items-center">
@@ -27,8 +27,8 @@ const ProjectsCardList = (props) => {
         </div>
       )}
       {mobile && (
-         <div className=" flex flex-col h-full mt-8 w-full  ">
-          <h2 id="projects" className="text-5xl mb-4 ">
+         <div className=" flex flex-col h-full w-full  ">
+          <h2 id="projects" className="text-4xl mt-10 mb-4 text-stone-50">
             Projects
           </h2>
           <div className="flex flex-col items-center ">
