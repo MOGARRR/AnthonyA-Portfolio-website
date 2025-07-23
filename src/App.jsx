@@ -21,7 +21,6 @@ function App() {
 
   useEffect(() => {
     isUserMobile();
-    // alert(mobile)
   }, [window.innerWidth]);
 
   return (
@@ -53,7 +52,7 @@ function App() {
         <MobileHero/>
         <MobileAbout/>
         <MobileSkills/>
-
+        <ProjectsCardList mobile={mobile}/>
         </main>
         
 
