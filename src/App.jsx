@@ -53,6 +53,8 @@ function App() {
         <MobileAbout/>
         <MobileSkills/>
         <ProjectsCardList mobile={mobile}/>
+        <ContactForm/>
+
         </main>
         
 

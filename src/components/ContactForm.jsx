@@ -3,8 +3,8 @@ import "../styles/ContactForm.css";
 
 const ContactForm = () => {
   return (
-    <div id="contactForm" className="mt-20 text-stone-50 w-9/12">
-      <h1 className="text-4xl mb-5 border-b-2 border-stone-500">
+    <div id="contactForm" className="md:mt-20 mt-10 ml-12 text-stone-50 w-9/12">
+      <h1 className="md:text-4xl text-3xl mb-5 border-b-2 border-stone-500">
         Get in touch with me!{" "}
       </h1>
 
@@ -19,7 +19,7 @@ const ContactForm = () => {
           <label for="name">Full name:</label>
           <br />
           <input
-            className="form-area mt-1 rounded-md p-2 w-3/12 "
+            className="form-area mt-1 rounded-md p-2 md:w-3/12 "
             type="text"
             id="name"
             name="name"
@@ -31,7 +31,7 @@ const ContactForm = () => {
           <label for="email">Email:</label>
           <br />
           <input
-            className="form-area mt-1 rounded-md p-2 w-3/12"
+            className="form-area mt-1 rounded-md p-2 md:w-3/12"
             type="email"
             id="email"
             name="email"
@@ -44,7 +44,7 @@ const ContactForm = () => {
           <label for="message">Message:</label>
           <br />
           <textarea
-            className="form-area mt-1 rounded-md p-2 w-3/12 h-36"
+            className="form-area mt-1 rounded-md p-2 md:w-3/12 w-11/12 h-36"
             name="message"
             id="message"
             placeholder="Leave me a message! "
@@ -54,7 +54,7 @@ const ContactForm = () => {
         <br />
         <button
           type="submit"
-          className="form-btn border-2 border-stone-500 p-3 rounded-full w-3/12 mt-3"
+          className="form-btn border-2 border-stone-500 p-3 rounded-full md:w-3/12 w-10/12 mt-3"
         >
           Submit
         </button>
