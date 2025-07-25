@@ -3,6 +3,11 @@
   z-index: 1000;
 }
 
+.nav-mobile{
+  backdrop-filter: blur(30px);
+  z-index: 1000;
+}
+
 .nav-item{
   will-change: transform;
   transition: transform 1s;
