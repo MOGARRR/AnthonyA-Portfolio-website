@@ -14,7 +14,9 @@ import MobileHeader from "./components/MobileHeader";
 import MobileAbout from "./components/MobileAbout";
 import MobileSkills from "./components/MobileSkills";
 
+
 function App() {
+  const nav = true;
   const [mobile, setMobile] = useState(false);
   const isUserMobile = () =>
     window.innerWidth < 768 ? setMobile(true) : setMobile(false);
@@ -47,18 +49,17 @@ function App() {
       )}
 
       {mobile && (
-        <main>
-        <MobileHeader/>
-        <MobileHero/>
-        <MobileAbout/>
-        <MobileSkills/>
-        <ProjectsCardList mobile={mobile}/>
-        <ContactForm/>
-        <Footer/>
-        </main>
-        
-
+          <main>
+          <MobileHeader/>
+          <MobileHero/>
+          <MobileAbout/>
+          <MobileSkills />
+          <ProjectsCardList mobile={mobile}/>
+          <ContactForm/>
+          <Footer/>
+          </main>
       )}
+     
     </>
   );
 }
