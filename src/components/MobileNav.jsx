@@ -17,7 +17,7 @@ const MobileNav = (props) => {
   return (
     <>
       <div className="flex">
-        <div className="nav-mobile fixed top-0 w-8/12 h-screen flex flex-col justify-around text-stone-50">
+        <div className="nav-mobile fixed top-0 w-8/12 h-screen flex flex-col justify-around text-stone-50 select-none">
           <div className="flex flex-col items-center">
             <span
               onClick={() => props.handleNav(true)}
@@ -53,7 +53,7 @@ const MobileNav = (props) => {
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-around h-3/6">
+          <div className="flex flex-col items-center justify-around h-3/6 ">
             <div className="text-5xl border-b-2 w-11/12">Reach out!</div>
 
             <div>
