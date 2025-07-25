@@ -15,7 +15,7 @@ const handleCardHover = (e) => {
 
   return (
  <div id="skills" className="p-4 mt-10 text-stone-50">
-      <h2 className="text-4xl mb-4">Skills</h2>
+      <h2 className="section-title text-4xl mb-4">Skills</h2>
       <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory px-1 pb-2">
         {skills.map((skill) => (
           <div

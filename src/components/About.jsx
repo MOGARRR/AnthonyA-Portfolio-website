@@ -4,7 +4,7 @@ import "../styles/About.css";
 const About = () => {
   return (
     <div id="about" className=" mt-20 f text-stone-50 mx-40">
-      <h3 className="about text-4xl bolden"> About me </h3>
+      <h3 className="section-title text-5xl mb-10"> About me </h3>
       <p className="text-3xl">
         I'm a <span className="bolden">full-stack web developer</span> who
         recently graduated from Lighthouse Labs and looking for an opportunity

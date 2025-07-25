@@ -7,7 +7,7 @@ const MobileNav = (props) => {
     id === "projects"
       ? scrollLocation.scrollIntoView({ behavior: "smooth", block: "center" })
       : id === "about"
-        ? scrollLocation.scrollIntoView({ behavior: "smooth", block: "end" })
+        ? scrollLocation.scrollIntoView({ behavior: "smooth", block: "start" })
         : scrollLocation.scrollIntoView({
             behavior: "smooth",
             block: "center",
@@ -23,7 +23,7 @@ const MobileNav = (props) => {
               onClick={() => props.handleNav(true)}
               className="text-5xl border-b-2 w-full p-3 flex items-baseline"
             >
-              <i class="fa-solid fa-angle-left mr-10"></i>
+              <i class="fa-solid fa-angle-left mr-10 " ></i>
               Menu
             </span>
 

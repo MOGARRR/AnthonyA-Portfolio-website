@@ -4,7 +4,7 @@ import '../styles/About.css'
 const MobileAbout = () => {
   return (
     <div id="about" className="text-lg text-stone-50 px-4 py-6 space-y-6">
-      <h3 className="text-2xl bolden underline underline-offset-4">
+      <h3 className="section-title text-4xl">
         About Me
       </h3>
       

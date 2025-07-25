@@ -4,7 +4,7 @@ import "../styles/ContactForm.css";
 const ContactForm = () => {
   return (
     <div id="contactForm" className="md:mt-20 mt-10 md:ml-0 ml-12 text-stone-50 w-9/12">
-      <h1 className="md:text-4xl text-3xl mb-5 border-b-2 border-stone-500">
+      <h1 className="section-title md:text-4xl text-3xl mb-5 border-b-2 border-stone-500">
         Get in touch with me!{" "}
       </h1>
 
