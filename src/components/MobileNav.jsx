@@ -16,7 +16,7 @@ const MobileNav = (props) => {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex ">
         <div className="nav-mobile fixed top-0 w-8/12 h-screen flex flex-col justify-around text-stone-50 select-none">
           <div className="flex flex-col items-center">
             <span

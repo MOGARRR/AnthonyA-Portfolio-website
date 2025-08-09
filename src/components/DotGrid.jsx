@@ -264,6 +264,11 @@ const DotGrid = ({
     shockStrength,
   ]);
 
+  useEffect(() => {
+    window.addEventListener("load", buildGrid);
+    return () => window.removeEventListener("load", buildGrid);
+  }, [buildGrid]);
+  
   return (
     <section className={`dot-grid ${className}`} style={style}>
       <div ref={wrapperRef} className="dot-grid__wrap">

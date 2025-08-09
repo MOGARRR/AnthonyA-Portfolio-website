@@ -19,9 +19,15 @@ function App() {
   const isUserMobile = () =>
     window.innerWidth < 768 ? setMobile(true) : setMobile(false);
 
-  useEffect(() => {
-    isUserMobile();
-  }, [window.innerWidth]);
+useEffect(() => {
+  const handleResize = () => {
+    setMobile(window.innerWidth < 768);
+  };
+
+  handleResize(); // check on mount
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
   return (
     <>
