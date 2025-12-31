@@ -32,7 +32,7 @@ const Skills = () => {
               </span>
             </div>
             {hover.includes(skill.id) && (
-              <span className="text-3xl skill-title">{skill.name}</span>
+              <span className="text-3xl  p-1 skill-title">{skill.name}</span>
             )}
           </div>
         ))}
