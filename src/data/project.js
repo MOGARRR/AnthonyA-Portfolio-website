@@ -1,7 +1,7 @@
 import photoLabsHome from '../photos/photo-labs-home.png'
 import jungleHome from '../photos/Jungle-rails-home.png'
 import decisionHome from '../photos/decision-maker-home.png'
-import KiloBoyHome from '../photos/KiloBoy-Art.png'
+import KiloBoyHome from '../assets/KiloboyHompage.gif'
 const projects = [
   {
     id: 0,
@@ -17,7 +17,7 @@ const projects = [
       { id: 5, name: "Resend" },
     ],
     github: "https://github.com/MOGARRR/miles",
-    image: 'https://cdn.discordapp.com/attachments/1298292949154660416/1466857993953087775/homepageGIF.gif?ex=698239f6&is=6980e876&hm=6791650f4ec4a64161c2795d661b9e2406a63065a40a330e8b9f2910baccd3a3&',
+    image: KiloBoyHome,
   },
   {
     id: 1,
