@@ -5,7 +5,7 @@ const MobileProjectCard = (props) => {
   const { title, description, stack, github, image, liveSite } = props;
 
   return (
-    <div className="text-stone-50 w-11/12">
+    <div className="text-stone-50 px-2">
       <h1 className="text-4xl">{title}</h1>
       <img
         className="w-11/12 m-4 mb-0 rounded-t-lg border-2 border-stone-500 "

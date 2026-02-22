@@ -7,7 +7,7 @@ const projects = [
     id: 0,
     title: "KiloBoy Artwork",
     description:
-      "KiloBoy Artwork is a custom e-commerce platform built with Next.js, Supabase, and Stripe, handling the full order lifecycle from checkout to shipping. Developed in a team, I focused on backend orchestration, secure route handling, and third-party integrations within a reliable asynchronous workflow.",
+      "Built with Next.js, Supabase, and Stripe, KiloBoy Artwork manages the full order lifecycle from checkout to shipping. I led backend orchestration, secure routing, and third-party integrations.",
     stack: [
       { id: 0, name: "NextJs" },
       { id: 1, name: "TypeScript" },

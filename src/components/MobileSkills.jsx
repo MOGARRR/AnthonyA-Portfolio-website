@@ -20,14 +20,14 @@ const handleCardHover = (e) => {
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className="snap-start shrink-0 w-36 flex flex-col items-center rounded-lg ml-2 p-4 shadow-lg"
+            className="snap-start shrink-0 w-36 flex flex-col items-center rounded-lg ml-2 p-4 shadow-lg "
           >
             <img
               src={skill.logo}
               alt={skill.name}
               className="h-18 w-18 object-contain"
             />
-            <p className="text-2xl mt-2 text-center">{skill.name}</p>
+            <p className="text-2xl mt-2 text-center ">{skill.name}</p>
           </div>
         ))}
       </div>
