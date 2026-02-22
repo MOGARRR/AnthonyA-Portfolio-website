@@ -16,12 +16,12 @@ const MobileNav = (props) => {
 
   return (
     <>
-      <div className="flex ">
-        <div className="nav-mobile fixed top-0 w-8/12 h-screen flex flex-col justify-around text-stone-50 select-none">
+      <div className="flex h-full">
+        <div className="nav-mobile fixed top-0 w-8/12 h-full flex flex-col justify-around text-stone-50 select-none">
           <div className="flex flex-col items-center">
             <span
               onClick={() => props.handleNav(true)}
-              className="text-5xl border-b-2 w-full p-3 flex items-baseline"
+              className="text-5xl border-b-2 w-full p-3 flex items-baseline "
             >
               <i class="fa-solid fa-angle-left mr-10 " ></i>
               Menu

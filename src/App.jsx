@@ -53,7 +53,7 @@ useEffect(() => {
       )}
 
       {mobile && (
-        <main>
+        <main className="overflow-hidden">
           <MobileHeader />
           <MobileHero />
           <MobileAbout />

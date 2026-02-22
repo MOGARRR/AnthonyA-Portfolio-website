@@ -20,6 +20,7 @@ const ProjectsCardList = (props) => {
                 description={project.description}
                 stack={project.stack}
                 github={project.github}
+                liveSite={project.liveSite}
                 image={project.image}
               />
             ))}

@@ -5,9 +5,9 @@ import KiloBoyHome from '../assets/KiloboyHompage.gif'
 const projects = [
   {
     id: 0,
-    title: "KiloBoy Artwork - (Under Development)",
+    title: "KiloBoy Artwork – Full-Stack E-Commerce Platform",
     description:
-      "A full-stack web application built for Toronto-based artist KiloBoy, combining a dynamic gallery with a custom e-commerce experience.",
+      "KiloBoy Artwork is a custom e-commerce platform built with Next.js, Supabase, and Stripe. The project handles the complete order lifecycle from checkout to shipping. Developed in a team, I focused heavily on backend orchestration, secure route handling, and integrating multiple third-party services into a reliable asynchronous workflow.",
     stack: [
       { id: 0, name: "NextJs" },
       { id: 1, name: "TypeScript" },
@@ -17,6 +17,7 @@ const projects = [
       { id: 5, name: "Resend" },
     ],
     github: "https://github.com/MOGARRR/miles",
+    liveSite: "https://miles-delta.vercel.app/",
     image: KiloBoyHome,
   },
   {
