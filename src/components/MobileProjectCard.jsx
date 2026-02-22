@@ -32,13 +32,13 @@ const MobileProjectCard = (props) => {
         </p>
         <div className="flex justify-center">
           <div className="bg-gray-800 h-2/6 w-2/12 border-2 rounded-full m-2 px-1 py-2">
-            <a href={github}>
+            <a href={github} target="blank">
               <i class="fa-brands fa-github fa-2xl"></i>
             </a>
           </div>
           {liveSite && (
             <div className="bg-gray-800 h-2/6 w-2/12 border-2 rounded-full m-2 px-1 py-2">
-              <a href={liveSite}>
+              <a href={liveSite} target="blank">
                 <i class="fa-regular fa-window-maximize fa-xl"></i>
               </a>
             </div>

@@ -1,13 +1,20 @@
 .side-bar,.side-bar-copy{
   backdrop-filter: blur(10px);
 }
-.side-bar-copy{
-animation: rendering 1s;
+.side-bar-copy {
+  backdrop-filter: blur(10px);
+  transition: transform 1s ease, opacity 1s ease;
 }
 
-@keyframes rendering {
-    from { left: 0; }
-    to   { left: 1; }
+.side-bar-copy.closed {
+  transform: translateX(-120%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.side-bar-copy.open {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 
