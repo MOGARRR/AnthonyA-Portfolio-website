@@ -5,9 +5,9 @@ import KiloBoyHome from '../assets/KiloboyHompage.gif'
 const projects = [
   {
     id: 0,
-    title: "KiloBoy Artwork – Full-Stack E-Commerce Platform",
+    title: "KiloBoy Artwork",
     description:
-      "KiloBoy Artwork is a custom e-commerce platform built with Next.js, Supabase, and Stripe. The project handles the complete order lifecycle from checkout to shipping. Developed in a team, I focused heavily on backend orchestration, secure route handling, and integrating multiple third-party services into a reliable asynchronous workflow.",
+      "KiloBoy Artwork is a custom e-commerce platform built with Next.js, Supabase, and Stripe, handling the full order lifecycle from checkout to shipping. Developed in a team, I focused on backend orchestration, secure route handling, and third-party integrations within a reliable asynchronous workflow.",
     stack: [
       { id: 0, name: "NextJs" },
       { id: 1, name: "TypeScript" },

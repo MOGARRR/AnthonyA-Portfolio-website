@@ -7,8 +7,8 @@ const MobileHero = () => {
           Hi, my name is
         </h1>
         <h1 className="hero-name gradient text-5xl font-bold mb-5 "> Anthony Alicea</h1>
-        <h2 className="text-2xl">
-          Its nice to meet you!<br/>I like learning and creating new things!
+        <h2 className="text-xl">
+          I like learning and creating new things!
         </h2>
       </div>
   )

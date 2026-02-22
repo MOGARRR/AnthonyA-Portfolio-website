@@ -32,7 +32,7 @@ const ProjectsCardList = (props) => {
           <h2 id="projects" className="section-title text-4xl mt-10 mb-4 text-stone-50">
             Projects
           </h2>
-          <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center px-4">
             {projects.map((project) => (
               <MobileProjectCard
                 key={project.id}
@@ -40,6 +40,7 @@ const ProjectsCardList = (props) => {
                 description={project.description}
                 stack={project.stack}
                 github={project.github}
+                liveSite={project.liveSite}
                 image={project.image}
               />
             ))}
