@@ -6,13 +6,15 @@
   transition: transform 1s ease, opacity 1s ease;
 }
 
-
-
 .side-bar-copy.open {
   transform: translateX(0);
   opacity: 1;
 }
 
+.side-bar-copy.closed {
+  transform: translateX(-120%);
+  opacity: 0;
+}
 
 .glow,.glow-copy{
   will-change: transform;

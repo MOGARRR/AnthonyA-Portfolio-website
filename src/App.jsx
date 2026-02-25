@@ -16,9 +16,7 @@ import MobileSkills from "./components/MobileSkills";
 
 function App() {
   const [mobile, setMobile] = useState(false);
-  const isUserMobile = () =>
-    window.innerWidth < 768 ? setMobile(true) : setMobile(false);
-
+  
 useEffect(() => {
   const handleResize = () => {
     setMobile(window.innerWidth < 1200);

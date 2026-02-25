@@ -3,8 +3,7 @@ import "../styles/Contacts.css";
 
 const Contacts = () => {
   const [copyLinks, setCopyLinks] = useState(false);
-  const handleContactHover = () =>
-    copyLinks ? setCopyLinks(false) : setCopyLinks(true);
+  const handleContactHover = () => setCopyLinks(!copyLinks);
 
   const handleCopyToBoard = (type) =>
     type === "email"
