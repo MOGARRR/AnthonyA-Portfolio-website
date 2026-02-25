@@ -7,7 +7,7 @@ const projects = [
     id: 0,
     title: "KiloBoy Artwork",
     description:
-      "Built with Next.js, Supabase, and Stripe, KiloBoy Artwork manages the full order lifecycle from checkout to shipping. I led backend orchestration, secure routing, and third-party integrations.",
+      "Gallery and e-commerce Site for a Toronto-based artist, built with Next.js, Supabase, Stripe, and shippo. Featuring dynamic catalogue, integrated payments and shipping, events calendar, and admin tools.",
     stack: [
       { id: 0, name: "NextJs" },
       { id: 1, name: "TypeScript" },

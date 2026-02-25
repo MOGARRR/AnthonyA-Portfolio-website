@@ -21,7 +21,7 @@ function App() {
 
 useEffect(() => {
   const handleResize = () => {
-    setMobile(window.innerWidth < 768);
+    setMobile(window.innerWidth < 1200);
   };
 
   handleResize(); // check on mount
