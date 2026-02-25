@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -16,7 +17,7 @@ import MobileSkills from "./components/MobileSkills";
 
 function App() {
   const [mobile, setMobile] = useState(false);
-  
+
 useEffect(() => {
   const handleResize = () => {
     setMobile(window.innerWidth < 1200);
@@ -29,6 +30,8 @@ useEffect(() => {
 
   return (
     <>
+    // Track site traffic analytics
+    <Analytics/>
       {!mobile && (
         <div className="relative min-h-screen overflow-hidden">
           <DotGrid
