@@ -7,20 +7,28 @@
   transform: translateY(-15px) ;
 }
 .skill-title{
-  animation: renderingTitle 1.5s;
+  transition: transform 1s ease, opacity 1s ease;
   text-shadow:
   1px 1px 7px red,
   0 0 1em blue,
   0 0 2em blue;
 }
 
-
-@keyframes renderingTitle {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+.skill-title.open {
+  opacity: 1;
 }
 
-.glow-mouse {
+.skill-title.closed {
+  opacity: 0;
+}
+
+
+/* @keyframes renderingTitle {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} */
+
+/* .glow-mouse {
   position: relative;
   overflow: hidden;
 }
@@ -42,4 +50,4 @@
 }
 .glow-mouse:hover::before {
   --size: 160px;
-}
+} */

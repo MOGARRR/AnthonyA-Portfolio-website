@@ -1,7 +1,8 @@
 import photoLabsHome from '../photos/photo-labs-home.png'
 import jungleHome from '../photos/Jungle-rails-home.png'
 import decisionHome from '../photos/decision-maker-home.png'
-import KiloBoyHome from '../assets/KiloboyHompage.gif'
+import kiloBoyHome from '../assets/KiloboyHompage.gif'
+import tinyAppHome from '../photos/TinyAppHomePage.png'
 const projects = [
   {
     id: 0,
@@ -18,7 +19,7 @@ const projects = [
     ],
     github: "https://github.com/MOGARRR/miles",
     liveSite: "https://miles-delta.vercel.app/",
-    image: KiloBoyHome,
+    image: kiloBoyHome,
   },
   {
     id: 1,
@@ -50,8 +51,22 @@ const projects = [
     github: "https://github.com/Amga20d/decision-maker",
     image: decisionHome,
   },
-  {
+    {
     id: 3,
+    title: "TinyApp",
+    description:
+      "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). Users can make an account to create short urls to use and share any of their favorite websites.",
+    stack: [
+      { id: 0, name: "Node.js" },
+      { id: 1, name: "Express" },
+      { id: 2, name: "PostgreSQL" },
+      { id: 3, name: "EJS" },
+    ],
+    github: "https://github.com/MOGARRR/tinyapp",
+    image: tinyAppHome,
+  },
+  {
+    id: 4,
     title: "PhotoLabs",
     description:
       " Front-end React application built for users to share experiences through interactive design. Users can browse a gallery of curated images, toggle favorites, filter photos by topics, or use dark mode to curate thier personal gallery. The app emphasizes component-based design and scalable architecture.",
@@ -65,21 +80,6 @@ const projects = [
     github: "https://github.com/MOGARRR/PhotoLabs",
     image: photoLabsHome,
   },
-  // {
-  //   id: 3,
-  //   title: "LightBnB",
-  //   description:
-  //     "Multi-page Airbnb clone with custom PostgreSQL database. Supports search filtering, user listings, reservations, and more.",
-  //   stack: [
-  //     { id: 0, name: "Node.js" },
-  //     { id: 1, name: "Express" },
-  //     { id: 2, name: "PostgreSQL" },
-  //     { id: 3, name: "HTML" },
-  //     { id: 4, name: "CSS" },
-  //   ],
-  //   github: "https://github.com/MOGARRR/LightBnB",
-  //   image: "https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28192739/Homepage-Design-Featured-Image-1024x597.gif",
-  // },
 ];
 
 export default projects;
