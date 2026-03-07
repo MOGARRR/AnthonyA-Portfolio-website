@@ -14,7 +14,7 @@ const About = () => {
         <span className="bolden">dependable</span> code. Outside of development, I enjoy making music, creating
         art, gaming, reading, writing, and experimenting in the kitchen. I am
         currently focused on deepening my skills in <span className="bolden">Go</span> and continuing to
-        grow as an engineer.
+        grow as an developer.
       </p>
     </div>
   );

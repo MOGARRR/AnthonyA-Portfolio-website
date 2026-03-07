@@ -1,10 +1,21 @@
 #skills{
-  will-change: transform;
-  transition: transform 1s;
+  /* will-change: transform;
+  transition: transform 1s; */
 }
 
-#skills:hover{
+/* #skills:hover{
   transform: translateY(-15px) ;
+} */
+
+.card{
+  --rotateX: 0deg;
+  --rotateY: 0deg;
+    transition: transform .25s ease;
+  transform:
+  perspective(5000px)
+   rotateY(var(--rotateY))
+   rotateX(var(--rotateX));
+
 }
 .skill-title{
   transition: transform 1s ease, opacity 1s ease;
