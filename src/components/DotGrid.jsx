@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useRef, useEffect, useCallback, useMemo } from "react";
 import { gsap } from "gsap";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
@@ -7,6 +7,7 @@ import "../styles/DotGrid.css";
 
 gsap.registerPlugin(InertiaPlugin);
 
+// Function for throttling frequent function calls (mouse move events)
 const throttle = (func, limit) => {
   let lastCall = 0;
   return function (...args) {
@@ -18,6 +19,7 @@ const throttle = (func, limit) => {
   };
 };
 
+// Converts hex color strings into RGB
 function hexToRgb(hex) {
   const m = hex.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);
   if (!m) return { r: 0, g: 0, b: 0 };
@@ -27,7 +29,7 @@ function hexToRgb(hex) {
     b: parseInt(m[3], 16),
   };
 }
-
+//Creates a grid of interactive dots with physics and color effects
 const DotGrid = ({
   dotSize = 20,
   gap = 20,
@@ -43,6 +45,8 @@ const DotGrid = ({
   className = "",
   style,
 }) => {
+
+  // Refs for the wrapper and canvas elements and tracks pointer position and dot data
   const wrapperRef = useRef(null);
   const canvasRef = useRef(null);
   const dotsRef = useRef([]);
@@ -57,6 +61,7 @@ const DotGrid = ({
     lastY: 0,
   });
 
+  // Convert the base and active colors to RGB
   const baseRgb = useMemo(() => hexToRgb(baseColor), [baseColor]);
   const activeRgb = useMemo(() => hexToRgb(activeColor), [activeColor]);
 
@@ -68,11 +73,13 @@ const DotGrid = ({
     return p;
   }, [dotSize]);
 
+  // Build the grid of dots based on the component size/settings
   const buildGrid = useCallback(() => {
     const wrap = wrapperRef.current;
     const canvas = canvasRef.current;
     if (!wrap || !canvas) return;
 
+    // Get the dimensions of the wrapper and set the canvas size
     const { width, height } = wrap.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
 
@@ -83,6 +90,7 @@ const DotGrid = ({
     const ctx = canvas.getContext("2d");
     if (ctx) ctx.scale(dpr, dpr);
 
+    // Calculate the number of columns and rows needed to fill grid
     const cols = Math.floor((width + gap) / (dotSize + gap));
     const rows = Math.floor((height + gap) / (dotSize + gap));
     const cell = dotSize + gap;
@@ -96,6 +104,7 @@ const DotGrid = ({
     const startX = extraX / 2 + dotSize / 2;
     const startY = extraY / 2 + dotSize / 2;
 
+    // Create array of dots with their position and offsets
     const dots = [];
     for (let y = 0; y < rows; y++) {
       for (let x = 0; x < cols; x++) {
@@ -107,6 +116,7 @@ const DotGrid = ({
     dotsRef.current = dots;
   }, [dotSize, gap]);
 
+  // Use effect to handle the rendering of dots and mouse events 
   useEffect(() => {
     if (!circlePath) return;
 
@@ -122,6 +132,7 @@ const DotGrid = ({
 
       const { x: px, y: py } = pointerRef.current;
 
+      // Loop through dots and checks distance to pointer to change color based if near the mouse
       for (const dot of dotsRef.current) {
         const ox = dot.cx + dot.xOffset;
         const oy = dot.cy + dot.yOffset;
@@ -138,7 +149,7 @@ const DotGrid = ({
           const b = Math.round(baseRgb.b + (activeRgb.b - baseRgb.b) * t);
           style = `rgb(${r},${g},${b})`;
         }
-
+        // Draw the circle for each dot
         ctx.save();
         ctx.translate(ox, oy);
         ctx.fillStyle = style;
@@ -153,6 +164,8 @@ const DotGrid = ({
     return () => cancelAnimationFrame(rafId);
   }, [proximity, baseColor, activeRgb, baseRgb, circlePath]);
 
+
+  //Remake grid on resize events
   useEffect(() => {
     buildGrid();
     let ro = null;
@@ -168,6 +181,7 @@ const DotGrid = ({
     };
   }, [buildGrid]);
 
+  // Mouse move/click event listeners for tracking pointer movement and applying inertia effects to dots
   useEffect(() => {
     const onMove = (e) => {
       const now = performance.now();
@@ -178,6 +192,8 @@ const DotGrid = ({
       let vx = (dx / dt) * 1000;
       let vy = (dy / dt) * 1000;
       let speed = Math.hypot(vx, vy);
+
+      // set speed to maxSpeed
       if (speed > maxSpeed) {
         const scale = maxSpeed / speed;
         vx *= scale;
@@ -191,10 +207,12 @@ const DotGrid = ({
       pr.vy = vy;
       pr.speed = speed;
 
+      // Update pointer position relative to the canvas
       const rect = canvasRef.current.getBoundingClientRect();
       pr.x = e.clientX - rect.left;
       pr.y = e.clientY - rect.top;
 
+      // Check if dots are in range and apply inertia effects
       for (const dot of dotsRef.current) {
         const dist = Math.hypot(dot.cx - pr.x, dot.cy - pr.y);
         if (speed > speedTrigger && dist < proximity && !dot._inertiaApplied) {
@@ -268,7 +286,7 @@ const DotGrid = ({
     window.addEventListener("load", buildGrid);
     return () => window.removeEventListener("load", buildGrid);
   }, [buildGrid]);
-  
+
   return (
     <section className={`dot-grid ${className}`} style={style}>
       <div ref={wrapperRef} className="dot-grid__wrap">
