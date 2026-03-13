@@ -13,7 +13,7 @@ const About = () => {
         attention to detail. I now apply those same principles to writing <span className="bolden">clean</span>,
         <span className="bolden">dependable</span> code. Outside of development, I enjoy making music, creating
         art, gaming, reading, writing, and experimenting in the kitchen. I am
-        currently focused on deepening my skills in <span className="bolden">Go</span> and continuing to
+        currently focused on deepening my skills in <span className="bolden">Python</span> and continuing to
         grow as an developer.
       </p>
     </div>

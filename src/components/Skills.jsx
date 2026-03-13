@@ -61,7 +61,7 @@ const Skills = () => {
             </div>
 
             <span
-              className={`text-3xl ${hover.includes(skill.id) ? "open" : "closed"}  p-1 skill-title`}
+              className={`text-3xl ${hover.includes(skill.id) ? "open" : "closed"} skill-title`}
             >
               {skill.name}
             </span>

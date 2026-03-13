@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
 
   return (
     <div className="project-card-text mt-10 text-stone-50">
-      <h1 className="border-b-2 border-stone-500 text-3xl md:text-5xl">
+      <h1 className="border-b-2 border-stone-500 text-3xl md:text-5xl pb-3">
         {title}
       </h1>
 

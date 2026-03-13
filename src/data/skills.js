@@ -11,17 +11,17 @@ import postgresLogo from '../assets/postgresql-svgrepo-com.svg'
 import nextjsLogo from '../assets/nextjs-svgrepo-com.svg'
 import supabaseLogo from '../assets/supabase-1262-svgrepo-com.svg'
 import ejsLogo from '../assets/Ejs--Streamline-Simple-Icons.svg'
-import goLogo from '../assets/go-svgrepo-com.svg'
+import pyLogo from '../assets/python-127-svgrepo-com.svg'
 import gitLogo from '../assets/github-142-svgrepo-com.svg'
 
 const skills = [
   { id: 0, name: "JavaScript", logo: jsLogo },
   { id: 1, name: "TypeScript", logo: tsLogo },
   { id: 2, name: "Ruby", logo: rubyLogo },
-  { id: 6, name: "Go", logo: goLogo },
-  { id: 5, name: "SQL", logo: sqlLogo },
-  { id: 3, name: "HTML", logo: htmlLogo },
-  { id: 4, name: "CSS", logo: cssLogo },
+  { id: 3, name: "Python", logo: pyLogo },
+  { id: 4, name: "SQL", logo: sqlLogo },
+  { id: 5, name: "HTML", logo: htmlLogo },
+  { id: 6, name: "CSS", logo: cssLogo },
   { id: 7, name: "Node.js", logo: nodeLogo },
   { id: 8, name: "Express.js", logo: expressLogo },
   { id: 9, name: "React", logo: reactLogo },
