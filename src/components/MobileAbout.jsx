@@ -24,7 +24,7 @@ const MobileAbout = () => {
       <section>
         Outside of development, I enjoy music, art, gaming, reading, and
         cooking. I am always learning and currently deepening my skills with{" "}
-        <span className="bolden">Go</span>. If you would like to connect or talk
+        <span className="bolden">Python</span>. If you would like to connect or talk
         tech, feel free to reach out!
       </section>
     </div>
