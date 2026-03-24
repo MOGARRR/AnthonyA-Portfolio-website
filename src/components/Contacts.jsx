@@ -23,7 +23,7 @@ const Contacts = () => {
     <div onMouseEnter={handleContactHover} onMouseLeave={handleContactHover}>
       <div
         dir="rtl"
-        className={`side-bar-copy ${copyLinks ? "open" : "closed"} flex flex-col justify-around w-33 p-2 fixed left-16 ml-2 top-1/3 h-1/4 rounded-s-lg border-2 border-stone-500 h-2/6`}
+        className={`side-bar-copy ${copyLinks ? "open" : "closed"} flex flex-col justify-around w-33 p-2 fixed left-16 ml-2 top-1/3 h-1/4 rounded-s-lg border-2 border-stone-500 h-1/4`}
       >
         <div className="text-xl border-b-2">Copy</div>
         <div
