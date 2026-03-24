@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Contacts.css";
-
-
+// REMOVE PHONE NUM
 const Contacts = () => {
   const [copyLinks, setCopyLinks] = useState(false);
   const handleContactHover = () => setCopyLinks(!copyLinks);
@@ -17,14 +16,14 @@ const Contacts = () => {
         : type === "git"
           ? navigator.clipboard.writeText("https://github.com/MOGARRR") &&
             alert("Copied Github to Clipboard")
-          : navigator.clipboard.writeText("4032009883") &&
+          : navigator.clipboard.writeText("") &&
             alert("Copied Phone to Clipboard");
 
   return (
     <div onMouseEnter={handleContactHover} onMouseLeave={handleContactHover}>
       <div
         dir="rtl"
-        className={`side-bar-copy ${copyLinks ? "open" : "closed"} flex flex-col justify-around w-33 p-2 fixed left-16 ml-2 top-1/3 rounded-s-lg border-2 border-stone-500 h-2/6`}
+        className={`side-bar-copy ${copyLinks ? "open" : "closed"} flex flex-col justify-around w-33 p-2 fixed left-16 ml-2 top-1/3 h-1/4 rounded-s-lg border-2 border-stone-500 h-2/6`}
       >
         <div className="text-xl border-b-2">Copy</div>
         <div
@@ -45,17 +44,11 @@ const Contacts = () => {
         >
           <i class="fa-solid fa-envelope fa-2xl"></i>
         </div>
-        <div
-          onClick={() => handleCopyToBoard()}
-          className="glow-copy m-2 p-1 rounded-full text-stone-400 hover:text-stone-50  hover:cursor-pointer "
-        >
-          <i class="fa-solid fa-phone fa-2xl"></i>
-        </div>
       </div>
 
       <div
         dir="rtl"
-        className="side-bar flex flex-col justify-around  w-33 p-2 fixed left-0 top-1/3 rounded-s-lg border-2 border-stone-500 h-2/6"
+        className="side-bar flex flex-col justify-around  w-33 p-2 fixed left-0 top-1/3 rounded-s-lg border-2 border-stone-500 h-1/4"
       >
         <div className="text-xl border-b-2">Visit</div>
         <div className="glow m-2 p-1 rounded-full text-stone-400 hover:text-stone-50  hover:cursor-pointer">
@@ -73,11 +66,7 @@ const Contacts = () => {
             <i class="fa-solid fa-envelope fa-2xl"></i>
           </a>
         </div>
-        <div className="glow m-2 p-1 rounded-full text-stone-400 hover:text-stone-50  hover:cursor-pointer ">
-          <a href="tel:+14032009883">
-            <i class="fa-solid fa-phone fa-2xl"></i>
-          </a>
-        </div>
+      
       </div>
     </div>
   );
